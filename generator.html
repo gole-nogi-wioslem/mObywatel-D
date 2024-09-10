@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz E-dowód</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formularz E-dowód</h1>
+        <form action="edowod.html" method="post" enctype="multipart/form-data" id="edowod-form">
+            <label for="surname">Nazwisko:</label>
+            <input type="text" id="surname" name="surname" required>
+            
+            <label for="given-names">Imiona:</label>
+            <input type="text" id="given-names" name="given-names" required>
+            
+            <label for="citizenship">Obywatelstwo:</label>
+            <input type="text" id="citizenship" name="citizenship" required>
+            
+            <label for="birthdate">Data urodzenia:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            
+            <label for="id-number">Numer dowodu osobistego:</label>
+            <input type="text" id="id-number" name="id-number" required>
+            
+            <label for="gender">Płeć:</label>
+            <select id="gender" name="gender" required>
+                <option value="M">M</option>
+                <option value="K">K</option>
+            </select>
+            
+            <label for="expiry-date">Termin ważności:</label>
+            <input type="date" id="expiry-date" name="expiry-date" required>
+            
+            <label for="can-number">Numer can:</label>
+            <input type="text" id="can-number" name="can-number" required>
+            
+            <label for="photo">Zdjęcie:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+            
+            <button type="submit">Wygeneruj e-dowód</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('edowod-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const params = new URLSearchParams();
+            formData.forEach((value, key) => {
+                params.append(key, value);
+            });
+
+            const photo = formData.get('photo');
+            const reader = new FileReader();
+            reader.onload = function() {
+                params.append('photo', reader.result);
+                window.location.href = 'edowod.html?' + params.toString();
+            };
+            reader.readAsDataURL(photo);
+        });
+    </script>
+</body>
+</html>

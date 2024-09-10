@@ -1,0 +1,672 @@
+<html lang="pl" class="scrollbar"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_H45b1H"></div><head>
+    <title>Logowanie | Login.gov.pl</title>
+    <link rel="shortcut icon" href="/assets/images/herb.svg">
+
+    <link rel="preload" href="https://login.gov.pl/assets/fonts/opensans/opensans-regular.ttf" as="font" type="font/ttf" crossorigin="">
+    <link rel="preload" href="https://login.gov.pl/assets/images/mobywatel-frame-bg.webp" as="image">
+    <link rel="preload" href="https://login.gov.pl/assets/images/mobywatel-frame-img.webp" as="image" media="(min-width: 1000px)">
+    <link rel="preload" href="https://login.gov.pl/assets/styles/common.css" as="style">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://login.gov.pl/assets/styles/common.css">
+    <link rel="stylesheet" type="text/css" media="all" href="https://login.gov.pl/assets/styles/login-type.css">
+    <link rel="stylesheet" type="text/css" media="all" href="https://login.gov.pl/assets/styles/wk-template.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/smartbanner.js/1.19.3/smartbanner.min.css">
+
+    <meta charset="utf-8">
+    <meta content="initial-scale=1.0, width=device-width" name="viewport">
+    
+
+    <meta name="smartbanner:title" content="mObywatel">
+    <meta name="smartbanner:author" content="Ministerstwo Cyfryzacji">
+    <meta name="smartbanner:price" content=" ">
+    <meta name="smartbanner:price-suffix-apple" content="Pobierz w App Store">
+    <meta name="smartbanner:price-suffix-google" content="Pobierz w Google Play">
+    <meta name="smartbanner:icon-apple" content="/assets/images/mobywatel.webp">
+    <meta name="smartbanner:icon-google" content="/assets/images/mobywatel.webp">
+    <meta name="smartbanner:button" content="Pokaż">
+    <meta name="smartbanner:button-url-apple" content="https://apps.apple.com/us/app/mobywatel/id1339613469">
+    <meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=pl.nask.mobywatel&amp;hl=en_US">
+    <meta name="smartbanner:enabled-platforms" content="android,ios">
+    <meta name="smartbanner:close-label" content="Zamknij">
+    <meta name="smartbanner:hide-path" content="/">
+    <meta name="smartbanner:api" content="true">
+
+<body>
+
+<div class="gov2-login__wrapper">
+    <div class="gov2__section-wrapper">
+        <div class="gov2__section-background">
+            <div class="gov2__header-wrapper">
+                <header class="gov2__header-heading">
+                    <a href="https://gov.pl" class="gov2__header gov2--margin-0">fakemobywatel</a>
+                </header>
+                
+            </div>
+            <div class="gov2__section-slider" id="js-gov2__section-wrapper">
+                <form id="coi-wk-loginMethodSelect__form" name="xidpLoginForm" class="coi-wk-loginMethodSelect__form">
+                    <input id="xidpId" name="xidpId" type="hidden" value="">
+                    <input id="bsXidp" name="bsXidp" type="hidden" value="">
+                    <input id="selectedCountry" name="selectedCountry" type="hidden">
+
+                    <section class="gov2-login__content hidden" id="js-loader">
+                        <div class="lds-ring">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </section>
+                    <section class="gov2-login__content show" id="js-login-list">
+                        <header class="gov2__subheader-wrapper gov2--margin-0">
+                            <h2 class="gov2__subheader" data-i18n-key="login-to" style="display: inline;">Zaloguj się do usługi</h2>
+                            <p data-i18n-key="copy-qr">Status: Online</p>
+                            <h2 class="gov2__subheader" style="display: inline;"></h2>
+                        </header>
+                        <a href="generator.html">
+                        <li id="go-mobywatel" class="gov2-login__list-element d-flex-row order3 noUA" tabindex="0">
+                            <div class="gov2-login__list-element--icon">
+                                <img src="https://login.gov.pl/assets/images/mobywatel_app.svg" alt="">
+                            </div>
+                            <div class="gov2-login__list-element--desc">
+                                <div class="chip-row">
+                                    <h3 class="gov2__section-heading" data-i18n-key="mo-app">FakeObywatel 2.08</h3>
+                                    <div class="chip-recommended">ONLINE</div>
+                                </div>
+                                <p data-i18n-key="copy-qr">Wygeneruj swój mObywatel</p>
+                            </div>
+                            <div class="gov2-login__list-element--arrow">
+                                <img src="https://login.gov.pl/assets/images/chevron_right.svg" alt="">
+                            </div>
+                        </li>
+                        </a>
+                        <nav>
+                                
+
+
+                            <ul id="login-list" class="gov2-login__list">
+                                <p id="intro-copy" class="gov2__paragraph" data-i18n-key="choose-safe-login">Wybierz bezpieczny sposób logowania</p>
+                                <p id="other-copy" class="gov2__paragraph hidden" data-i18n-key="other-login">Pozostałe sposoby logowania</p>
+
+                                
+                                    
+                                
+
+                                
+
+                                
+
+                                
+                                    
+                                
+
+                                
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </section>
+                    <section class="gov2-login__content hidden" id="js-wt-login-list">
+                        <header class="gov2__subheader-wrapper">
+                        </header>
+                        <nav>
+                            <ul id="login-list-wt" class="gov2-login__list">
+
+                                
+
+
+                            </ul>
+                        </nav>
+                    </section>
+                    <section class="gov2-login__content hidden" id="moje-id">
+                        <header class="gov2__subheader-wrapper">
+                            <button class="gov2__go-back-button" id="js-hide-myid-view" type="button" onclick="onBackToMainPage()" data-i18n-key="go-back">Wróć</button>
+                            <h2 class="gov2__subheader" data-i18n-key="my-id">Bankowość elektroniczna</h2>
+                            <p class="gov2__paragraph" data-i18n-key="choose-bank-to-login">Wybierz bank, za pomocą którego chcesz się zalogować</p>
+                        </header>
+                     
+                    </section>
+
+
+                    
+                        <section class="gov2-login__content show" id="js-additional-login-list">
+                            <nav>
+                                <ul id="additional-login-list" class="gov2-login__list">
+                                    
+                                        
+                                    
+                                </ul>
+                            </nav>
+                        </section>
+                    
+
+                </form>
+            </div>
+
+            <footer class="gov2__footer-wrapper gov2__footer-inner">
+                
+            </footer>
+        </div>
+
+    </div>
+
+    
+
+    
+        
+    
+</div>
+
+<footer class="gov2__footer-wrapper gov2__footer-main">
+    <ul class="gov2__footer_links">
+        <li>
+            <a href="https://www.gov.pl/web/gov/polityka-dotyczaca-cookies" target="_blank" title="Otwarcie w nowym oknie" data-i18n-key="cookies-policy">Polityka cookies</a>
+        </li>
+        <li>
+            <a href="https://www.gov.pl/web/gov/warunki-korzystania" target="_blank" title="Otwarcie w nowym oknie" data-i18n-key="regulations">Warunki korzystania</a>
+        </li>
+        <li>
+            <a href="https://www.gov.pl/web/gov/klauzula-rodo" target="_blank" title="Otwarcie w nowym oknie" data-i18n-key="rodo">Klauzula RODO</a>
+        </li>
+        <li>
+            <a href="https://www.gov.pl/web/gov/deklaracja-dostepnosci-serwisu-govpl" target="_blank" title="Otwarcie w nowym oknie" data-i18n-key="accesibility">Deklaracja dostępności</a>
+        </li>
+    </ul>
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/smartbanner.js/1.19.3/smartbanner.min.js"></script>
+<script async="" src="/assets/js/scriptsGov/scriptV2.js"></script>
+<script async="" src="/assets/js/translate.js"></script>
+<script async="" src="/assets/js/scriptsGov/smartbanner-config.js"></script>
+
+<script>
+    prepareEIdDescription();
+    let onLoadHandlerForConflictTesting = function () {
+    };
+    window.onload = onLoadHandlerForConflictTesting;
+    document.addEventListener('smartbanner.view', function () {
+    });
+    document.addEventListener('smartbanner.exit', function () {
+    });
+    document.addEventListener('smartbanner.clickout', function () {
+    });
+
+    const loaderView = $("#js-loader");
+    const loginListView = $("#js-login-list");
+    const wtLoginListView = $("#js-wt-login-list");
+    const mojeId = $("#moje-id");
+    const coOpBanks = $("#co-op-banks");
+    const languages = document.getElementById('languages');
+    const language = document.getElementById('language');
+    const lastlang = localStorage.getItem("lastlang");
+    const additionalLoginList = $("#js-additional-login-list");
+
+    const loginForm = $("#coi-wk-loginMethodSelect__form");
+
+    $(document).ready(function () {
+        
+        showHtmlElement(loginListView);
+        
+        
+        
+        showHtmlElement(additionalLoginList);
+        
+        loaderView.addClass("hidden");
+
+
+        const lastLoginType = localStorage.getItem("lastLoginType");
+        const lastBankFilename = localStorage.getItem("lastBankFilename");
+        const lastBankName = localStorage.getItem("lastBankName");
+
+        if (lastLoginType) {
+            if (lastLoginType === 'pz') {
+                $("#reuse-login-list").find("#go-pz").removeClass("hidden");
+                $("#login-list").find("#go-pz").addClass("hidden");
+            } else if (lastLoginType === 'mobywatel') {
+                $("#reuse-login-list").find("#go-mobywatel").removeClass("hidden");
+                $("#login-list").find("#go-mobywatel").addClass("hidden");
+            } else if (lastLoginType === 'myid') {
+                $("#reuse-login-list").find("#go-myid").removeClass("hidden");
+                $("#reuse-login-list").find(".reuse-bank-icon").attr("src", "/login/resource/image/xidpLogo/" + lastBankFilename);
+                $("#reuse-login-list").find("#reuse-bank-name").text(lastBankName);
+                $("#reuse-login-list").find("#go-myid").attr("onClick", "onGoToMyId('" + lastBankFilename + "', '" + lastBankName + "')");
+            } else if (lastLoginType === 'myidbs') {
+                $("#reuse-login-list").find("#go-myid").removeClass("hidden");
+                $("#reuse-login-list").find(".reuse-bank-icon").attr("src", "/assets/images/mojeid/sgb.png");
+                $("#reuse-login-list").find("#reuse-bank-name").text(lastBankName);
+                $("#reuse-login-list").find("#go-myid").attr("onClick", "onLoginBS('" + lastBankFilename + "', '" + lastBankName + "')");
+            } else if (lastLoginType === 'edowod') {
+                $("#reuse-login-list").find("#go-edowod").removeClass("hidden");
+                $("#login-list").find("#go-edowod").addClass("hidden");
+            }
+        }
+
+        checkAndUpdateVisibilityOfTheSection();
+    });
+
+    function prepareEIdDescription() {
+        var userAgent = window.navigator.userAgent;
+        var isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+        // labels designed for desktop are visible and labels designed for mobile are hidden by default
+        if (isMobile) {
+            var desktopLabels = document.querySelectorAll('p.e-id-description');
+            var mobileLabels= document.querySelectorAll('p.e-id-mobile-description');
+            // this will hide labels designed for desktop
+            for (var i = 0; i < desktopLabels.length; i++) {
+                desktopLabels[i].className = 'hidden';
+            }
+            // this will show labels designed for mobile
+            for (var i = 0; i < mobileLabels.length; i++) {
+                mobileLabels[i].className = '';
+            }
+        }
+    }
+
+    function checkAndUpdateVisibilityOfTheSection() {
+        if ($('#reuse-login-list').find('li.gov2-login__list-element:not(.hidden)').length == 0) {
+            hideReuseLoginList();
+        } else {
+            showReuseLoginList();
+        }
+
+        if ($('#login-list').find('li.gov2-login__list-element:not(.hidden)').length == 0) {
+            $("#login-list").addClass("hidden");
+            // TODO: Dodaj informację dla użytkownika. W tym momencie nie ma żadnej opcji do wyboru na ekranie.
+        } else {
+            $("#login-list").removeClass("hidden");
+        }
+    }
+
+    function onChooseLangs() {
+        languages.style.display = 'block';
+
+        document.onclick = function (e) {
+            if (e.target.id !== 'language' && e.target.id !== 'select-lang' && e.target.id !== 'lang-ico') {
+                languages.style.display = 'none';
+            }
+        };
+        $('#languages').find("li").on("click", function (e) {
+            languages.style.display = 'none';
+        });
+    }
+
+    function onSelectLang(code, name) {
+        $("#language").html(name);
+        localStorage.setItem("lastlang", code);
+        code ? setLocale(code) : setLocale('pl');
+        hideNoUAElements(code);
+
+        if (code === "pl") {
+            $(".selected-voivodeship").html("Wybierz");
+            $(".select-banks").html("Wybierz");
+            $("#bankSearch").attr("placeholder", "Wpisz nazwę banku");
+        } else if (code === "ua") {
+            $(".selected-voivodeship").html("Виберіть воєводство");
+            $(".select-banks").html("Виберіть банк");
+            $("#bankSearch").attr("placeholder", "Знайдіть назву банку");
+        }
+    }
+
+    function hideNoUAElements(code) {
+        if (code === 'pl') {
+            $(document).find('.noUA.ua-hidden').removeClass("hidden");
+        } else if (code === 'ua') {
+            $(document).find('.noUA:not(.hidden)').addClass("hidden ua-hidden");
+        } else if (code === 'en') {
+            $(document).find('.noUA:not(.hidden)').addClass("hidden ua-hidden");
+        }
+
+        checkAndUpdateVisibilityOfTheSection();
+    }
+
+    function onGoToPz(pzId) {
+        
+        localStorage.setItem("lastLoginType", "pz");
+        
+        login(pzId);
+    }
+
+    function onGoToMobywatel(moId) {
+        localStorage.setItem("lastLoginType", "mobywatel");
+        login(moId);
+    }
+
+    function onGoToMyId(bankFilename, bankName) {
+        localStorage.setItem("lastLoginType", "myid");
+        localStorage.setItem("lastBankFilename", bankFilename);
+        localStorage.setItem("lastBankName", bankName);
+        login(bankFilename);
+    }
+
+    function onGoToEdowod(edoId) {
+        
+        localStorage.setItem("lastLoginType", "edowod");
+        
+        login(edoId);
+    }
+
+    function login(xidpIdValue) {
+        document.getElementById("xidpId").value = xidpIdValue;
+        loginForm.submit();
+    }
+
+    function loginBS() {
+        let bankFilename = document.getElementById("xidpId").value;
+        let bankName = document.getElementById("bsXidp").value;
+        onLoginBS(bankFilename, bankName);
+    }
+
+    function onLoginBS(bankFilename, bankName) {
+        if (bankFilename == '' && bankName == '') {
+            onShowMyIdClick();
+        } else {
+            localStorage.setItem("lastLoginType", "myidbs");
+            localStorage.setItem("lastBankFilename", bankFilename);
+            localStorage.setItem("lastBankName", bankName);
+            login(bankFilename);
+        }
+    }
+
+    function onShowMyIdClick() {
+        setTimeout(() => {
+            hideHtmlElement(additionalLoginList);
+            hideHtmlElement(loginListView);
+            hideHtmlElement(coOpBanks);
+
+            showHtmlElement(mojeId);
+
+            scrollToTop();
+        }, 0);
+    }
+
+    function onShowCoopBanksClick() {
+        setTimeout(() => {
+            hideHtmlElement(additionalLoginList);
+            hideHtmlElement(loginListView);
+            hideHtmlElement(mojeId);
+
+            showHtmlElement(coOpBanks);
+
+            scrollToTop();
+        }, 0);
+    }
+
+    function onBackToMainPage() {
+        setTimeout(() => {
+            showHtmlElement(additionalLoginList);
+            showHtmlElement(loginListView);
+
+            hideHtmlElement(mojeId);
+            hideHtmlElement(coOpBanks);
+
+            scrollToTop();
+        }, 0);
+    }
+
+    function scrollToBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+        });
+    }
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: document.body,
+            behavior: "smooth",
+        });
+    }
+
+    function showHtmlElement(element) {
+        element.addClass("show");
+        element.removeClass("hidden");
+    }
+
+    function hideHtmlElement(element) {
+        element.addClass("hidden");
+        element.removeClass("show");
+    }
+
+    function hideReuseLoginList() {
+        $("#reuse-login-list").find("#intro-copy").addClass("hidden");
+        $("#login-list").find("#other-copy").addClass("hidden");
+
+        $("#login-list").find("#intro-copy").removeClass("hidden");
+        $("#js-login-list header").addClass("gov2--margin-0");
+        $("#reuse-login-list").addClass("gov2--margin-0");
+    }
+
+    function showReuseLoginList() {
+        $("#reuse-login-list").find("#intro-copy").removeClass("hidden");
+        $("#login-list").find("#other-copy").removeClass("hidden");
+
+        $("#login-list").find("#intro-copy").addClass("hidden");
+        $("#js-login-list header").removeClass("gov2--margin-0");
+        $("#reuse-login-list").removeClass("gov2--margin-0");
+    }
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            var focusedElement = document.activeElement;
+            if (focusedElement instanceof HTMLElement && typeof focusedElement.click === 'function') {
+                focusedElement.click();
+            }
+        }
+    });
+</script>
+<script>
+    // Dialogs
+    $(document).ready(function () {
+
+        dialog = $("#dialog-country").dialog({
+            autoOpen: false,
+            height: 710,
+            width: 800,
+            modal: true,
+            closeText: "",
+            show: 'fade',
+            open: function (event, ui) {
+                $("div.ui-dialog:visible").find("div.focusable").focus();
+            }
+        });
+
+        dialog2 = $("#country-info").dialog({
+            autoOpen: false,
+            height: 350,
+            width: 550,
+            modal: true,
+            closeText: "",
+            show: 'fade',
+            open: function (event, ui) {
+                $("div.ui-dialog:visible").find("div.focusable").focus();
+            }
+        });
+
+        $("#choose-country").button().on("click", function () {
+            dialog.dialog("open");
+            activeDialogBackdrop();
+        });
+
+        $("#close-country-info").button().on("click", function () {
+            dialog2.dialog("close");
+        });
+    });
+
+    function loadCountryView(countryCode) {
+        if (countryCode) {
+            document.getElementById("selectedCountry").value = countryCode;
+            loginForm.submit();
+        } else {
+            $.ui.dialog.prototype._focusTabbable = function () {
+            };
+            dialog.dialog("close");
+            dialog2.dialog("open");
+            activeDialogBackdrop();
+        }
+
+    };
+
+    function activeDialogBackdrop() {
+        $(".ui-widget-overlay").click(function () {
+            $(".ui-dialog-titlebar-close").trigger('click');
+        });
+    }
+</script>
+
+<div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable" aria-describedby="dialog-country" style="display: none; position: fixed;" aria-labelledby="ui-id-1"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title=""><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span></button></div><div id="dialog-country" class="dialog ui-dialog-content ui-widget-content">
+    <div class="focusable visibility-hidden" tabindex="0"></div>
+    <h2 data-i18n-key="choose-country">Choose country</h2>
+    <p class="intro" data-i18n-key="use-national-eid">Use your National eID to access online services</p>
+
+    <ul class="footer scrollbar">
+        
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Austria (Austria)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Belgia (Belgium)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Chorwacja (Croatia)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Czechy (Czech Republic)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Dania (Denmark)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Estonia (Estonia)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Francja (France)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Hiszpania (Spain)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Holandia (Netherlands)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Liechtenstein (Liechtenstein)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Litwa (Lithuania)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Luksemburg (Luxembourg)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Łotwa (Latvia)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Malta (Malta)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Portugalia (Portugal)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Słowacja (Slovakia)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Słowenia (Slovenia)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Szwecja (Sweden)</div>
+                    </li>
+                
+            
+                
+                
+                    <li>
+                        <div class="btn-link" type="button" onclick="loadCountryView()" tabindex="0">Włochy (Italy)</div>
+                    </li>
+                
+            
+        
+    </ul>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable" aria-describedby="country-info" style="display: none; position: fixed;" aria-labelledby="ui-id-2"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-2" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title=""><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span></button></div><div id="country-info" class="dialog ui-dialog-content ui-widget-content">
+    <div class="focusable visibility-hidden" tabindex="0"></div>
+    <h2 data-i18n-key="service-not-av">We are sorry. The service is not available to you</h2>
+    <p class="intro" data-i18n-key="use-national-eid">Use your National eID to access online services</p>
+    <p class="desc" data-i18n-key="service-pl">The service is available only to users who use Polish electronic identification tools.</p>
+    <p class="intro">
+        If you need help, contact us: <a class="btn-link" href="mailto: login-pomoc@coi.gov.pl">login-pomoc@coi.gov.pl</a>
+    </p>
+    <button id="close-country-info" class="btn-gov btn-gov-primary ui-button ui-corner-all ui-widget">Close</button>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div></body><app-ls-content ng-version="17.3.7"></app-ls-content></html>
